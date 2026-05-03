@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <title>404 | OS Work Hub</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        color: #0f172a;
+        background:
+          radial-gradient(circle at 50% 0%, #16b8ff 0%, #177ef1 32%, #3147d7 72%, #3428bf 100%);
+      }
+
+      main {
+        width: min(100%, 560px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 28px;
+        padding: 32px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 28px 90px rgba(15, 23, 42, 0.28);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 999px;
+        padding: 4px 12px;
+        color: #2445c7;
+        background: rgba(56, 112, 222, 0.1);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .code {
+        display: grid;
+        place-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #3870de;
+        font-size: 12px;
+      }
+
+      h1 {
+        max-width: 420px;
+        margin: 28px 0 0;
+        font-size: clamp(32px, 6vw, 44px);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 16px 0 0;
+        color: #475569;
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: 28px;
+        border-radius: 999px;
+        padding: 0 20px;
+        color: #ffffff;
+        background: #3870de;
+        font-size: 14px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background: #2f61c7;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="badge"><span class="code">404</span>Страница не найдена</div>
+      <h1>Такой страницы нет в OS Work Hub</h1>
+      <p>
+        Если вы открывали внутренний раздел напрямую, проверьте настройки SPA
+        fallback в Vercel. Код ошибки: ::vercel:ERROR_CODE::. Request ID:
+        ::vercel:REQUEST_ID::.
+      </p>
+      <a href="/">На главную</a>
+    </main>
+  </body>
+</html>
